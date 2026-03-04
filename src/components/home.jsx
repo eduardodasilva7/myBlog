@@ -15,7 +15,7 @@ function Home(){
                     </div>
                 </div>
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                    <img src={homeImg} alt="" className="rounded-lg shadow-lg w-full h-full"/>
+                    <img src={homeImg} alt="" className="rounded-lg w-full h-screen"/>
                     <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-purple-600/20"></div>
                 </div>
             </section>
