@@ -1,21 +1,26 @@
-import './App.css'
+import './styles/index.css'
+import { ThemeProvider } from 'next-themes';
 import Menu from './components/menu'
 import Home from './components/home'
 import Projetos from './components/projetos'
 import Servico from './components/servico'
 import Sobre from './components/sobre'
 import Contato from './components/contato'
+import Footer from './components/footer'
 
 function App() {
   return (
-   <div>
-    <Menu />
-    <Home />
-    <Projetos />
-    <Servico />
-    <Sobre />
-    <Contato />
-   </div>
+   <ThemeProvider attribute="class" defaultTheme='light' enableSystem>
+    <div className='min-h-screen bg-white dark:bg-gray-950 transition-colors'>
+      <Menu />
+      <Home />
+      <Projetos />
+      <Servico />
+      <Sobre />
+      <Contato />
+      <Footer />
+    </div>
+   </ThemeProvider>
   )
 }
 
