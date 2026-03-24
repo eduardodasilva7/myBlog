@@ -1,4 +1,5 @@
-import { AnimatePresence, motion, useScroll } from "motion/react";
+import { AnimatePresence, motion
+ } from "motion/react";
 import { useState } from "react";
 import { MessageCircle, X, Bot, SendHorizontal } from 'lucide-react';
 
@@ -18,7 +19,7 @@ function ChatBot(){
               transition={{duration: 0.2}}
               className="fixed bottom-24 right-4 sm:right-6 lg:right-8 z-999"
             >
-              <div className="bg-white rounded-2xl w-80 border border-gray-200 dark:border-gray-700 dark:bg-gray-800">
+              <div className="bg-white rounded-2xl w-80 max-w-[calc(100vw-2rem)] border border-gray-200 dark:border-gray-700 dark:bg-gray-800">
                 {/* parte superior */}
                 <div className="flex justify-around items-center p-2 border-b border-gray-300 ">
 
