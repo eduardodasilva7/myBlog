@@ -7,6 +7,7 @@ import Servico from './components/servico'
 import Sobre from './components/sobre'
 import Contato from './components/contato'
 import Footer from './components/footer'
+import ChatBot from './components/chatbot';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Sobre />
       <Contato />
       <Footer />
+      <ChatBot />
     </div>
    </ThemeProvider>
   )

@@ -3,7 +3,7 @@ import {Globe} from 'lucide-react'
 
 function Servico(){
     return(
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-950">
+        <section id="servico" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-950">
             <div className="text-center mb-16">
                 <h1 className="text-4xl font-medium sm:text-5xl mb-4 text-gray-900 dark:text-white">Nossos <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Serviços</span></h1>
                 <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Soluções completas em tenologia para todas as necessidades do seu negócio.</p>

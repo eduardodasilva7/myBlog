@@ -4,7 +4,7 @@ import { CheckCircle, Award, Users, Target } from 'lucide-react';
 
 function Sobre(){
     return(
-        <main className="pt-16 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white w-screen dark:bg-gray-900">
+        <main id="sobre" className="pt-16 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white w-screen dark:bg-gray-900">
             <section  className="grid md:grid-cols-2 items-center gap-8 p-8 mx-auto">
                 <div className="flex flex-col gap-12 items-cente ">
                     <h1 className="text-5xl sm:text-6xl lg:text-7xl mb-6 text-gray-900 dark:text-white  max-w-2xl">Sobre <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Nós</span></h1>

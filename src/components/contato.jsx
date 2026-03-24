@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 function Contato() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-950">
+    <section id="contato" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-950">
       <div className="text-center mb-16">
         <h1 className="text-4xl font-medium sm:text-5xl mb-4 text-gray-900 dark:text-white">
           Entre em{" "}

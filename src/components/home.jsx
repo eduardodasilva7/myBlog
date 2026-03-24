@@ -2,16 +2,24 @@ import React from "react";
 import homeImg from '../assets/home-img.jpg'
 
 function Home(){
+    const scrollToSection = (id) =>{
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({behavior: 'smooth'})
+
+    }
+  }
+
     return(
-        <main className="pt-16 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white dark:bg-gray-950">
+        <main id="home" className="pt-16 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white dark:bg-gray-950">
             <section  className="grid lg:grid-cols-2 items-center gap-8 p-8 mx-auto">
                 <div className="flex flex-col gap-12 items-cente ">
                     <h1 className="text-5xl sm:text-6xl lg:text-7xl mb-6 text-gray-900  max-w-2xl dark:text-white">Transforme suas ideias em{' '}<span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">sistemas poderosos</span></h1>
                     <p className="text-xl text-gray-600 mb-8 max-w-xl dark:text-gray-400">Desenvolvimento de software sob medida para impulsionar seu negócio. Criamos sistemas web e mobile que entregam resultados reais.</p>
                     
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <button className="bg-black text-white py-2 px-4 rounded-md dark:bg-white dark:text-gray-800 ">Ver Projetos <span>→</span></button>
-                        <button className="py-2 px-4 ring-1 ring-gray-300 rounded-md dark:bg-gray-800 ">Solicitar Orçamento</button>
+                        <button onClick={() => scrollToSection('projetos')} className="bg-black text-white py-2 px-4 rounded-md dark:bg-white dark:text-gray-800 ">Ver Projetos <span>→</span></button>
+                        <button onClick={() => scrollToSection('contato')} className="py-2 px-4 ring-1 ring-gray-300 rounded-md dark:bg-gray-800 ">Solicitar Orçamento</button>
                     </div>
                 </div>
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">

@@ -5,6 +5,14 @@ import { Menu, X } from 'lucide-react';
 function MenuNav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const scrollToSection = (id) =>{
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({behavior: 'smooth'})
+      setIsMenuOpen(false)
+    }
+  }
+
   return (
     <header className="fixed top-0 left-0 right-0 z-999 bg-white/40 dark:bg-gray-900/80 ">
       <nav className="flex flex-row justify-between p-5 items-center border-b border-gray-300  backdrop-blur-md border-b border-gray-200 ">
@@ -14,20 +22,20 @@ function MenuNav() {
 
         {/* Desktop Menu */}
         <div className="flex flex-row gap-10 items-center hidden md:flex">
-            <button className="text-gray-700 hover:text-blue-600 transition-colors dark:text-gray-200 dark:hover:text-blue-400">
+            <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-blue-600 transition-colors dark:text-gray-200 dark:hover:text-blue-400">
               Início
             </button>
-            <button className="text-gray-700 hover:text-blue-600 transition-colors dark:text-gray-200 dark:hover:text-blue-400">
+            <button onClick={() => scrollToSection('projetos')} className="text-gray-700 hover:text-blue-600 transition-colors dark:text-gray-200 dark:hover:text-blue-400">
               Projetos
             </button>
-            <button className="text-gray-700 hover:text-blue-600 transition-colors dark:text-gray-200 dark:hover:text-blue-400">
+            <button onClick={() => scrollToSection('servico')} className="text-gray-700 hover:text-blue-600 transition-colors dark:text-gray-200 dark:hover:text-blue-400">
               Serviços
             </button>
-            <button className="text-gray-700 hover:text-blue-600 transition-colors dark:text-gray-200 dark:hover:text-blue-400">
+            <button onClick={() => scrollToSection('sobre')} className="text-gray-700 hover:text-blue-600 transition-colors dark:text-gray-200 dark:hover:text-blue-400">
               Sobre
             </button>
             <Theme />
-            <button className="px-4 py-2 rounded-md bg-black text-white transition-colors dark:bg-white dark:text-gray-700">
+            <button onClick={() => scrollToSection('contato')} className="px-4 py-2 rounded-md bg-black text-white transition-colors dark:bg-white dark:text-gray-700">
               Contato
             </button>
         </div>

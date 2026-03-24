@@ -4,7 +4,7 @@ import img1 from '../assets/img1.jpg';
 
 function Projetos() {
     return(
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
+        <section id="projetos" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
             <div className="text-center mb-16">
                 <h1 className="text-4xl font-medium sm:text-5xl mb-4 text-gray-900 dark:text-white">Projetos em <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Destaque</span></h1>
                 <p className="text-xl text-gray-600  max-w-2xl mx-auto dark:text-gray-400">Conheça alguns dos sistemas ue desenvolvemos e os resultados alcançados</p>
